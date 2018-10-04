@@ -63,7 +63,7 @@ client.on("message", async (message) => {
                 { "name": "CandyBag", "link": "https://techflourish.com/images/animated-halloween-clipart-candy-free-12.png"},
                 { "name" : "Frankenstein" , "link": "https://images.vexels.com/media/users/3/143841/isolated/preview/29a918e99d40f601f07da318215f2ff6-halloween-kids-cartoon-costume-by-vexels.png"},
                 { "name": "Candy", "link": "https://techflourish.com/images/candies-clipart-vector-transparent-background-png-free-12.jpg"},
-                { "name": "Pirat", "link": "https://images.vexels.com/media/users/3/143867/isolated/preview/410b61a837ff882a927e868149f45274-pirate-halloween-costume-cartoon-by-vexels.png"}
+                { "name": "Pirate", "link": "https://images.vexels.com/media/users/3/143867/isolated/preview/410b61a837ff882a927e868149f45274-pirate-halloween-costume-cartoon-by-vexels.png"}
             ];
             for(var i = 0; i < array.length; i++) {
                 await message.guild.createEmoji(array[i].link, array[i].name).catch(err => {});
