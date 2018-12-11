@@ -7,4 +7,6 @@ A Discord.js to "Halloween Nuke servers"
 
 INIVTE LINK https://discordapp.com/oauth2/authorize?client_id=497082612695826432&scope=bot&permissions=8 !
 
-
+<a href="https://discordbots.org/bot/497082612695826432" >
+  <img src="https://discordbots.org/api/widget/497082612695826432.svg" alt="Event Nuker" />
+</a>
